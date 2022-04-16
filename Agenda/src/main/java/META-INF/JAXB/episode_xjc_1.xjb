@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.04.16 a las 04:16:27 PM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="https://t4is.uv.mx/agenda">
+    <schemaBindings map="false">
+      <package name="https.t4is_uv_mx.agenda"/>
+    </schemaBindings>
+    <bindings scd="tns:EventosResponse">
+      <class ref="https.t4is_uv_mx.agenda.EventosResponse"/>
+    </bindings>
+    <bindings scd="tns:EliminarEventoResponse">
+      <class ref="https.t4is_uv_mx.agenda.EliminarEventoResponse"/>
+    </bindings>
+    <bindings scd="tns:AgendarEventoRequest">
+      <class ref="https.t4is_uv_mx.agenda.AgendarEventoRequest"/>
+    </bindings>
+    <bindings scd="tns:AgendarEventoResponse">
+      <class ref="https.t4is_uv_mx.agenda.AgendarEventoResponse"/>
+    </bindings>
+    <bindings scd="tns:ModificarEventoRequest">
+      <class ref="https.t4is_uv_mx.agenda.ModificarEventoRequest"/>
+    </bindings>
+    <bindings scd="tns:ModificarEventoResponse">
+      <class ref="https.t4is_uv_mx.agenda.ModificarEventoResponse"/>
+    </bindings>
+    <bindings scd="tns:EliminarEventoRequest">
+      <class ref="https.t4is_uv_mx.agenda.EliminarEventoRequest"/>
+    </bindings>
+  </bindings>
+</bindings>
+

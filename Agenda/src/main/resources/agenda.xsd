@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="https://t4is.uv.mx/agenda"
+ xmlns:tns="https://t4is.uv.mx/agenda"
+ elementFormDefault="qualified">
+ <xs:element name="AgendarEventoRequest">
+  <xs:complexType>
+   <xs:sequence>
+	<xs:element name="Nombre" type="xs:string"/>
+        <xs:element name="FInicio" type="xs:string"/>
+        <xs:element name="FLimite" type="xs:string"/>
+        <xs:element name="Descripcion" type="xs:string"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+ <xs:element name="AgendarEventoResponse">
+  <xs:complexType>
+   <xs:sequence>
+	<xs:element name="RNombre" type="xs:string"/>
+        <xs:element name="RFInicio" type="xs:string"/>
+        <xs:element name="RFLimite" type="xs:string"/>
+        <xs:element name="RDescripcion" type="xs:string"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+<xs:element name="EventosRequest"/>
+ <xs:element name="EventosResponse">
+  <xs:complexType>
+   <xs:sequence>
+	<xs:element name="AgendaBD" maxOccurs="unbounded">
+           <xs:complexType>
+             <xs:sequence>
+               <xs:element name="id" type="xs:int"></xs:element>
+               <xs:element name="Nombre" type="xs:string"></xs:element>
+               <xs:element name="FInicio" type="xs:string"></xs:element>
+               <xs:element name="FLimite" type="xs:string"></xs:element>
+               <xs:element name="Descripcion" type="xs:string"></xs:element>
+             </xs:sequence>
+           </xs:complexType>
+       </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name="ModificarEventoRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:int"/>
+        <xs:element name="nuevaFLimite" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarEventoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:int"/>
+        <xs:element name="FLimite" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="EliminarEventoRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarEventoResponse">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="agenda" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id" type="xs:int"></xs:element>
+               <xs:element name="Nombre" type="xs:string"></xs:element>
+               <xs:element name="FInicio" type="xs:string"></xs:element>
+               <xs:element name="FLimite" type="xs:string"></xs:element>
+               <xs:element name="Descripcion" type="xs:string"></xs:element>
+              </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema> 
